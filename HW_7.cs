@@ -6,11 +6,11 @@
 
 // int GetSizeArray (string message)
 // {
-//     System.Console.WriteLine("Введите размер " + message);
+//     System.Console.WriteLine("Введите количество " + message);
 //     return Convert.ToInt32(Console.ReadLine());
 // }
 
-// void FillArray(int[,] array)
+// void FillArray(double[,] array)
 // {
 //     Random rnd = new Random();
 //     for (int i = 0; i < array.GetLength(0); i++)
@@ -18,27 +18,27 @@
 
 //         for (int j = 0; j < array.GetLength(1); j++)
 //         {
-//             array[i, j] = rnd.Next(-9, 10);
+//             array[i, j] = Math.Round(rnd.NextDouble()*10, 2);
 //         }
 //     }
 // }
 
-// void PrintArray(int[,] array)
+// void PrintArray(double[,] array)
 // {
 //     for (int i = 0; i < array.GetLength(0); i++)
 //     {
 
 //         for (int j = 0; j < array.GetLength(1); j++)
 //         {
-//             System.Console.Write(string.Format("{0,5}", array[i, j] + " "));
+//             System.Console.Write(string.Format("{0,8}", array[i, j] + " "));
 //         }
 //         System.Console.WriteLine();
 //     }
 // }
 
-// int m = GetSizeArray("m");
-// int n = GetSizeArray("n");
-// int[,] Array = new int[m, n];
+// int m = GetSizeArray("строк");
+// int n = GetSizeArray("столбцов");
+// double[,] Array = new double[m, n];
 // FillArray(Array);
 // PrintArray(Array);
 
